@@ -21,4 +21,4 @@ Learning the system
 The system has a friendly uncluttered, user interface and every link has a tooltip explaining a task that will be executed. We designed a help system that is easy to comprehend even for the inexperienced users thus lowering the learning curve. The user interface was made to conform to most of user interface design standards set by other large companies therefore the system almost behave like any other system which makes it easy to predict.
 
 # Guidelines
-![Static Badge](https://img.shields.io/badge/Visual%20Studio-2015-green) ![Static Badge](https://img.shields.io/badge/.Net%20Framework-4-purple)
+![Static Badge](https://img.shields.io/badge/Visual%20Studio-2010%20or%20later-green) ![Static Badge](https://img.shields.io/badge/.Net%20Framework-4-purple)
