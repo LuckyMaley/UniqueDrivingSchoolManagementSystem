@@ -1,6 +1,7 @@
 ﻿Public Class LoginHelp
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         Try
+            Ist3bbDataSet1.EnforceConstraints = False
             ManagerTableAdapter1.FillByLogin(Ist3bbDataSet1.Manager, tbUsername.Text, tbPassword.Text)
             If Ist3bbDataSet1.Manager.Rows.Count > 0 Then
                 MessageBox.Show("Welcome, you will be directed to the system.")
@@ -41,6 +42,19 @@
     End Sub
 
     Private Sub LoginForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'Try
+        'Dim DS As ist3bbDataSet = New ist3bbDataSet
+        'Dim TA As ist3bbDataSetTableAdapters.ManagerTableAdapter = New ist3bbDataSetTableAdapters.ManagerTableAdapter
+        'DS.EnforceConstraints = False
+        Ist3bbDataSet1.EnforceConstraints = False
+        ManagerTableAdapter1.Fill(Ist3bbDataSet1.Manager)
+            'TA.Fill(DS.Manager)
+            If Ist3bbDataSet1.Manager.Rows.Count = 0 Then
+                ManagerTableAdapter1.InsertDefault(1, "Jack", "Daniels", "42", "Unique Street", "Pietermaritzburg", "3201", "80", "50", "120", "80", "1800", "2200", "admin", "admin")
+            End If
+        'Catch ex As Exception
+        'MessageBox.Show(ex.Message)
+        'End Try
         tbPassword.UseSystemPasswordChar = True
     End Sub
 

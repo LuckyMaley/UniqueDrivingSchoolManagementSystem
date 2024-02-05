@@ -10,12 +10,14 @@
             Me.Instructor_CarTableAdapter1.Fill(Me.Ist3bbDataSet1.Instructor_Car)
             'TODO: This line of code loads data into the 'Ist3bbDataSet.Instructor' table. You can move, or remove it, as needed.
             Me.InstructorTableAdapter.Fill(Me.Ist3bbDataSet.Instructor)
-            Instructor_CarTableAdapter1.FillByInstrc(Ist3bbDataSet.Instructor_Car, tbInstructorID.Text)
-            If Ist3bbDataSet.Instructor_Car.Rows(0).Item(1) <> Nothing Then
-                TextBox1.Text = Ist3bbDataSet.Instructor_Car.Rows(0).Item(1)
-            End If
-            If Ist3bbDataSet.Instructor_Car.Rows(1).Item(1) <> Nothing Then
-                TextBox2.Text = Ist3bbDataSet.Instructor_Car.Rows(1).Item(1)
+            If Ist3bbDataSet.Instructor.Count > 0 Then
+                Instructor_CarTableAdapter1.FillByInstrc(Ist3bbDataSet.Instructor_Car, tbInstructorID.Text)
+                If Ist3bbDataSet.Instructor_Car.Rows(0).Item(1) <> Nothing Then
+                    TextBox1.Text = Ist3bbDataSet.Instructor_Car.Rows(0).Item(1)
+                End If
+                If Ist3bbDataSet.Instructor_Car.Rows(1).Item(1) <> Nothing Then
+                    TextBox2.Text = Ist3bbDataSet.Instructor_Car.Rows(1).Item(1)
+                End If
             End If
         Catch ex As Exception
             MessageBox.Show(ex.Message)
@@ -36,7 +38,12 @@
             btnAddInstructor.Enabled = False
             InstructorBindingSource.MoveLast()
             InstructorBindingSource.AddNew()
-            tbInstructorID.Text = InstructorTableAdapter.MaxInstrID() + 1
+            If Ist3bbDataSet.Instructor.Count = 0 Then
+                tbInstructorID.Text = (0 + 1).ToString
+            Else
+                tbInstructorID.Text = InstructorTableAdapter.MaxInstrID() + 1
+            End If
+
             TextBox1.Visible = False
             TextBox2.Visible = False
             Button5.Enabled = False

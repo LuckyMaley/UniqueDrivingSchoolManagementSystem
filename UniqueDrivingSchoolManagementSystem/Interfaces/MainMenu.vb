@@ -20,6 +20,7 @@ Public Class MainMenu
     End Sub
 
     Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         LogoutToolStripMenuItem.Enabled = False
         tsBtnManager.Enabled = False
         tsBtnTimetable.Enabled = False

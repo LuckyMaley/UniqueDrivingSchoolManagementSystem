@@ -53,12 +53,11 @@ Namespace My
                 Return defaultInstance
             End Get
         End Property
-        
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=143.128.146.30\ist3;Initial Catalog=ist3bb;Persist Security Info=True"& _ 
-            ";User ID=ist3bb;Password=d6t22g")>  _
+
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=ADMIN\SQLEXPRESS;Initial Catalog=UniqueDrivingSchoolDB;Integrated Security=True")>
         Public ReadOnly Property ist3bbConnectionString() As String
             Get
                 Return CType(Me("ist3bbConnectionString"),String)

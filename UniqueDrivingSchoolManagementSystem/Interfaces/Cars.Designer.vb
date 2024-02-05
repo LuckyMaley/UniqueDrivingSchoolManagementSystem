@@ -30,7 +30,6 @@ Partial Class Cars
         Dim Label2 As System.Windows.Forms.Label
         Dim Label3 As System.Windows.Forms.Label
         Dim Label4 As System.Windows.Forms.Label
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Cars))
         Me.btnSaveCar = New System.Windows.Forms.Button()
         Me.btnAddCar = New System.Windows.Forms.Button()
         Me.tbCarID = New System.Windows.Forms.TextBox()
@@ -96,9 +95,10 @@ Partial Class Cars
         CarIDLabel.Anchor = System.Windows.Forms.AnchorStyles.Top
         CarIDLabel.AutoSize = True
         CarIDLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        CarIDLabel.Location = New System.Drawing.Point(18, 16)
+        CarIDLabel.Location = New System.Drawing.Point(24, 20)
+        CarIDLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         CarIDLabel.Name = "CarIDLabel"
-        CarIDLabel.Size = New System.Drawing.Size(61, 24)
+        CarIDLabel.Size = New System.Drawing.Size(80, 29)
         CarIDLabel.TabIndex = 12
         CarIDLabel.Text = "Car ID"
         '
@@ -107,9 +107,10 @@ Partial Class Cars
         ModelLabel.Anchor = System.Windows.Forms.AnchorStyles.Top
         ModelLabel.AutoSize = True
         ModelLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ModelLabel.Location = New System.Drawing.Point(18, 55)
+        ModelLabel.Location = New System.Drawing.Point(24, 68)
+        ModelLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         ModelLabel.Name = "ModelLabel"
-        ModelLabel.Size = New System.Drawing.Size(63, 24)
+        ModelLabel.Size = New System.Drawing.Size(81, 29)
         ModelLabel.TabIndex = 16
         ModelLabel.Text = "Model"
         '
@@ -118,9 +119,10 @@ Partial Class Cars
         StatusLabel.Anchor = System.Windows.Forms.AnchorStyles.Top
         StatusLabel.AutoSize = True
         StatusLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        StatusLabel.Location = New System.Drawing.Point(18, 96)
+        StatusLabel.Location = New System.Drawing.Point(24, 118)
+        StatusLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         StatusLabel.Name = "StatusLabel"
-        StatusLabel.Size = New System.Drawing.Size(60, 24)
+        StatusLabel.Size = New System.Drawing.Size(79, 29)
         StatusLabel.TabIndex = 18
         StatusLabel.Text = "Status"
         '
@@ -129,9 +131,10 @@ Partial Class Cars
         Label1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Label1.AutoSize = True
         Label1.Font = New System.Drawing.Font("Times New Roman", 72.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Label1.Location = New System.Drawing.Point(544, -9)
+        Label1.Location = New System.Drawing.Point(725, -11)
+        Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Label1.Name = "Label1"
-        Label1.Size = New System.Drawing.Size(244, 109)
+        Label1.Size = New System.Drawing.Size(304, 135)
         Label1.TabIndex = 22
         Label1.Text = "Cars"
         '
@@ -140,9 +143,10 @@ Partial Class Cars
         Label2.Anchor = System.Windows.Forms.AnchorStyles.Top
         Label2.AutoSize = True
         Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Label2.Location = New System.Drawing.Point(18, 138)
+        Label2.Location = New System.Drawing.Point(24, 170)
+        Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Label2.Name = "Label2"
-        Label2.Size = New System.Drawing.Size(87, 24)
+        Label2.Size = New System.Drawing.Size(112, 29)
         Label2.TabIndex = 24
         Label2.Text = "Car Type"
         '
@@ -151,9 +155,10 @@ Partial Class Cars
         Label3.Anchor = System.Windows.Forms.AnchorStyles.Top
         Label3.AutoSize = True
         Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Label3.Location = New System.Drawing.Point(420, 109)
+        Label3.Location = New System.Drawing.Point(560, 134)
+        Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Label3.Name = "Label3"
-        Label3.Size = New System.Drawing.Size(168, 24)
+        Label3.Size = New System.Drawing.Size(209, 29)
         Label3.TabIndex = 26
         Label3.Text = "Search by model"
         '
@@ -162,9 +167,10 @@ Partial Class Cars
         Label4.Anchor = System.Windows.Forms.AnchorStyles.Top
         Label4.AutoSize = True
         Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Label4.Location = New System.Drawing.Point(6, 188)
+        Label4.Location = New System.Drawing.Point(8, 231)
+        Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Label4.Name = "Label4"
-        Label4.Size = New System.Drawing.Size(170, 24)
+        Label4.Size = New System.Drawing.Size(217, 29)
         Label4.TabIndex = 26
         Label4.Text = "Assigned Instructor"
         '
@@ -173,9 +179,10 @@ Partial Class Cars
         Me.btnSaveCar.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.btnSaveCar.Enabled = False
         Me.btnSaveCar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSaveCar.Location = New System.Drawing.Point(260, 226)
+        Me.btnSaveCar.Location = New System.Drawing.Point(347, 278)
+        Me.btnSaveCar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnSaveCar.Name = "btnSaveCar"
-        Me.btnSaveCar.Size = New System.Drawing.Size(75, 37)
+        Me.btnSaveCar.Size = New System.Drawing.Size(100, 46)
         Me.btnSaveCar.TabIndex = 21
         Me.btnSaveCar.Text = "Save"
         Me.btnSaveCar.UseVisualStyleBackColor = True
@@ -184,9 +191,10 @@ Partial Class Cars
         '
         Me.btnAddCar.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.btnAddCar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAddCar.Location = New System.Drawing.Point(8, 226)
+        Me.btnAddCar.Location = New System.Drawing.Point(11, 278)
+        Me.btnAddCar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnAddCar.Name = "btnAddCar"
-        Me.btnAddCar.Size = New System.Drawing.Size(75, 37)
+        Me.btnAddCar.Size = New System.Drawing.Size(100, 46)
         Me.btnAddCar.TabIndex = 20
         Me.btnAddCar.Text = "Add Car"
         Me.btnAddCar.UseVisualStyleBackColor = True
@@ -197,10 +205,11 @@ Partial Class Cars
         Me.tbCarID.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CarBindingSource, "CarID", True))
         Me.tbCarID.Enabled = False
         Me.tbCarID.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbCarID.Location = New System.Drawing.Point(121, 13)
+        Me.tbCarID.Location = New System.Drawing.Point(161, 16)
+        Me.tbCarID.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tbCarID.Name = "tbCarID"
         Me.tbCarID.ReadOnly = True
-        Me.tbCarID.Size = New System.Drawing.Size(201, 29)
+        Me.tbCarID.Size = New System.Drawing.Size(267, 34)
         Me.tbCarID.TabIndex = 13
         '
         'CarBindingSource
@@ -218,9 +227,10 @@ Partial Class Cars
         Me.tbModel.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.tbModel.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CarBindingSource, "Model", True))
         Me.tbModel.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbModel.Location = New System.Drawing.Point(121, 48)
+        Me.tbModel.Location = New System.Drawing.Point(161, 59)
+        Me.tbModel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tbModel.Name = "tbModel"
-        Me.tbModel.Size = New System.Drawing.Size(201, 29)
+        Me.tbModel.Size = New System.Drawing.Size(267, 34)
         Me.tbModel.TabIndex = 17
         '
         'tbStatus
@@ -228,9 +238,10 @@ Partial Class Cars
         Me.tbStatus.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.tbStatus.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CarBindingSource, "Status", True))
         Me.tbStatus.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbStatus.Location = New System.Drawing.Point(121, 91)
+        Me.tbStatus.Location = New System.Drawing.Point(161, 112)
+        Me.tbStatus.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tbStatus.Name = "tbStatus"
-        Me.tbStatus.Size = New System.Drawing.Size(201, 29)
+        Me.tbStatus.Size = New System.Drawing.Size(267, 34)
         Me.tbStatus.TabIndex = 19
         '
         'GroupBox1
@@ -241,45 +252,51 @@ Partial Class Cars
         Me.GroupBox1.Controls.Add(Me.btnFirst)
         Me.GroupBox1.Controls.Add(Me.btnPrevious)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(414, 428)
+        Me.GroupBox1.Location = New System.Drawing.Point(552, 527)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(486, 97)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(648, 119)
         Me.GroupBox1.TabIndex = 23
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Navigate"
         '
         'btnLast
         '
-        Me.btnLast.Location = New System.Drawing.Point(380, 28)
+        Me.btnLast.Location = New System.Drawing.Point(507, 34)
+        Me.btnLast.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnLast.Name = "btnLast"
-        Me.btnLast.Size = New System.Drawing.Size(100, 63)
+        Me.btnLast.Size = New System.Drawing.Size(133, 78)
         Me.btnLast.TabIndex = 4
         Me.btnLast.Text = "Last"
         Me.btnLast.UseVisualStyleBackColor = True
         '
         'btnNext
         '
-        Me.btnNext.Location = New System.Drawing.Point(114, 28)
+        Me.btnNext.Location = New System.Drawing.Point(152, 34)
+        Me.btnNext.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnNext.Name = "btnNext"
-        Me.btnNext.Size = New System.Drawing.Size(100, 63)
+        Me.btnNext.Size = New System.Drawing.Size(133, 78)
         Me.btnNext.TabIndex = 5
         Me.btnNext.Text = "Next"
         Me.btnNext.UseVisualStyleBackColor = True
         '
         'btnFirst
         '
-        Me.btnFirst.Location = New System.Drawing.Point(8, 28)
+        Me.btnFirst.Location = New System.Drawing.Point(11, 34)
+        Me.btnFirst.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnFirst.Name = "btnFirst"
-        Me.btnFirst.Size = New System.Drawing.Size(100, 63)
+        Me.btnFirst.Size = New System.Drawing.Size(133, 78)
         Me.btnFirst.TabIndex = 2
         Me.btnFirst.Text = "First"
         Me.btnFirst.UseVisualStyleBackColor = True
         '
         'btnPrevious
         '
-        Me.btnPrevious.Location = New System.Drawing.Point(274, 28)
+        Me.btnPrevious.Location = New System.Drawing.Point(365, 34)
+        Me.btnPrevious.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnPrevious.Name = "btnPrevious"
-        Me.btnPrevious.Size = New System.Drawing.Size(100, 63)
+        Me.btnPrevious.Size = New System.Drawing.Size(133, 78)
         Me.btnPrevious.TabIndex = 3
         Me.btnPrevious.Text = "Previous"
         Me.btnPrevious.UseVisualStyleBackColor = True
@@ -293,9 +310,10 @@ Partial Class Cars
         Me.CarDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.CarDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6})
         Me.CarDataGridView.DataSource = Me.CarBindingSource
-        Me.CarDataGridView.Location = New System.Drawing.Point(6, 21)
+        Me.CarDataGridView.Location = New System.Drawing.Point(8, 26)
+        Me.CarDataGridView.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.CarDataGridView.Name = "CarDataGridView"
-        Me.CarDataGridView.Size = New System.Drawing.Size(474, 255)
+        Me.CarDataGridView.Size = New System.Drawing.Size(632, 314)
         Me.CarDataGridView.TabIndex = 23
         '
         'DataGridViewTextBoxColumn4
@@ -320,27 +338,30 @@ Partial Class Cars
         '
         Me.TextBox2.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(594, 106)
+        Me.TextBox2.Location = New System.Drawing.Point(792, 130)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(259, 29)
+        Me.TextBox2.Size = New System.Drawing.Size(344, 34)
         Me.TextBox2.TabIndex = 27
         '
         'GroupBox2
         '
         Me.GroupBox2.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.GroupBox2.Controls.Add(Me.PictureBox1)
-        Me.GroupBox2.Location = New System.Drawing.Point(926, 139)
+        Me.GroupBox2.Location = New System.Drawing.Point(1235, 171)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(343, 282)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Size = New System.Drawing.Size(457, 347)
         Me.GroupBox2.TabIndex = 28
         Me.GroupBox2.TabStop = False
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(6, 13)
+        Me.PictureBox1.Location = New System.Drawing.Point(8, 16)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(331, 263)
+        Me.PictureBox1.Size = New System.Drawing.Size(441, 324)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
@@ -362,9 +383,11 @@ Partial Class Cars
         Me.GroupBox3.Controls.Add(Me.tbStatus)
         Me.GroupBox3.Controls.Add(Me.tbModel)
         Me.GroupBox3.Controls.Add(Me.tbCarID)
-        Me.GroupBox3.Location = New System.Drawing.Point(42, 139)
+        Me.GroupBox3.Location = New System.Drawing.Point(56, 171)
+        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(341, 282)
+        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox3.Size = New System.Drawing.Size(455, 347)
         Me.GroupBox3.TabIndex = 29
         Me.GroupBox3.TabStop = False
         '
@@ -374,9 +397,10 @@ Partial Class Cars
         Me.tbText1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.tbText1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbText1.FormattingEnabled = True
-        Me.tbText1.Location = New System.Drawing.Point(179, 180)
+        Me.tbText1.Location = New System.Drawing.Point(239, 222)
+        Me.tbText1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tbText1.Name = "tbText1"
-        Me.tbText1.Size = New System.Drawing.Size(143, 32)
+        Me.tbText1.Size = New System.Drawing.Size(189, 37)
         Me.tbText1.TabIndex = 82
         Me.tbText1.TabStop = False
         '
@@ -384,9 +408,10 @@ Partial Class Cars
         '
         Me.Button2.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(90, 226)
+        Me.Button2.Location = New System.Drawing.Point(120, 278)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(86, 37)
+        Me.Button2.Size = New System.Drawing.Size(115, 46)
         Me.Button2.TabIndex = 29
         Me.Button2.Text = "Update"
         Me.Button2.UseVisualStyleBackColor = True
@@ -395,9 +420,10 @@ Partial Class Cars
         '
         Me.Button1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(179, 226)
+        Me.Button1.Location = New System.Drawing.Point(239, 278)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 37)
+        Me.Button1.Size = New System.Drawing.Size(100, 46)
         Me.Button1.TabIndex = 28
         Me.Button1.Text = "Delete"
         Me.Button1.UseVisualStyleBackColor = True
@@ -410,9 +436,10 @@ Partial Class Cars
         Me.tbcarType.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbcarType.FormattingEnabled = True
         Me.tbcarType.Items.AddRange(New Object() {"Car", "Truck"})
-        Me.tbcarType.Location = New System.Drawing.Point(121, 138)
+        Me.tbcarType.Location = New System.Drawing.Point(161, 170)
+        Me.tbcarType.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tbcarType.Name = "tbcarType"
-        Me.tbcarType.Size = New System.Drawing.Size(201, 32)
+        Me.tbcarType.Size = New System.Drawing.Size(267, 37)
         Me.tbcarType.TabIndex = 25
         '
         'GroupBox4
@@ -420,9 +447,11 @@ Partial Class Cars
         Me.GroupBox4.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.GroupBox4.Controls.Add(Me.CarDataGridView)
         Me.GroupBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox4.Location = New System.Drawing.Point(414, 139)
+        Me.GroupBox4.Location = New System.Drawing.Point(552, 171)
+        Me.GroupBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(486, 282)
+        Me.GroupBox4.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox4.Size = New System.Drawing.Size(648, 347)
         Me.GroupBox4.TabIndex = 30
         Me.GroupBox4.TabStop = False
         '
@@ -432,8 +461,9 @@ Partial Class Cars
         Me.Panel1.Controls.Add(Label1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1332, 100)
+        Me.Panel1.Size = New System.Drawing.Size(1776, 123)
         Me.Panel1.TabIndex = 31
         '
         'InstructorCarBindingSource
@@ -496,11 +526,11 @@ Partial Class Cars
         '
         'Cars
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LightBlue
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1332, 587)
+        Me.ClientSize = New System.Drawing.Size(1776, 722)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Label3)
         Me.Controls.Add(Me.TextBox2)
@@ -508,6 +538,7 @@ Partial Class Cars
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox4)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Cars"
         Me.Text = " Cars"
         CType(Me.CarBindingSource, System.ComponentModel.ISupportInitialize).EndInit()

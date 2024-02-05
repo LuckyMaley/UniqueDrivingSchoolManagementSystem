@@ -14,13 +14,16 @@
             BookingTableAdapter1.Fill(Ist3bbDataSet.Booking)
             'TODO: This line of code loads data into the 'Ist3bbDataSet.Car' table. You can move, or remove it, as needed.
             Me.CarTableAdapter.FillByCond(Me.Ist3bbDataSet.Car, "Written off")
-            'TODO: This line of code loads data into the 'Ist3bbDataSet1.Instructor_Car' table. You can move, or remove it, as needed.
-            Me.Instructor_CarTableAdapter.Fill(Me.Ist3bbDataSet1.Instructor_Car)
-            Me.Instructor_CarTableAdapter.FillBy(Ist3bbDataSet1.Instructor_Car, tbCarID.Text)
-            If Ist3bbDataSet1.Instructor_Car.Rows.Count > 0 Then
-                tbText1.Text = Ist3bbDataSet1.Instructor_Car.Rows(0).Item(0)
-            Else
-                tbText1.ResetText()
+            If Ist3bbDataSet.Car.Count > 0 Then
+                'TODO: This line of code loads data into the 'Ist3bbDataSet1.Instructor_Car' table. You can move, or remove it, as needed.
+                Me.Instructor_CarTableAdapter.Fill(Me.Ist3bbDataSet1.Instructor_Car)
+                Me.Instructor_CarTableAdapter.FillBy(Ist3bbDataSet1.Instructor_Car, tbCarID.Text)
+                If Ist3bbDataSet1.Instructor_Car.Rows.Count > 0 Then
+                    tbText1.Text = Ist3bbDataSet1.Instructor_Car.Rows(0).Item(0)
+                Else
+                    tbText1.ResetText()
+                End If
+
             End If
         Catch ex As Exception
             MessageBox.Show(ex.Message, "Error")
@@ -33,7 +36,12 @@
             btnAddCar.Enabled = False
             CarBindingSource.MoveLast()
             CarBindingSource.AddNew()
-            tbCarID.Text = CarTableAdapter.MaxID() + 1
+            If Ist3bbDataSet.Car.Count = 0 Then
+                tbCarID.Text = (0 + 1).ToString
+            Else
+                tbCarID.Text = CarTableAdapter.MaxID() + 1
+            End If
+
             tbText1.ResetText()
             btnSaveCar.Enabled = True
             Button1.Enabled = False
@@ -123,7 +131,7 @@
                     PictureBox1.Visible = True
                     GroupBox2.Enabled = True
                     PictureBox1.Refresh()
-                    PictureBox1.Image = Image.FromFile("/FrontEnd/UniqueDrivingSchoolManagementSystem/UniqueDrivingSchoolManagementSystem/Resources/silvercar.jpg")
+                    PictureBox1.Image = My.Resources.silvercar
                     Me.Instructor_CarTableAdapter.FillBy(Ist3bbDataSet1.Instructor_Car, tbCarID.Text)
                     If Ist3bbDataSet1.Instructor_Car.Rows.Count > 0 Then
                         tbText1.Text = Ist3bbDataSet1.Instructor_Car.Rows(0).Item(0)
@@ -132,7 +140,7 @@
                     PictureBox1.Visible = True
                     GroupBox2.Enabled = True
                     PictureBox1.Refresh()
-                    PictureBox1.Image = Image.FromFile("/FrontEnd/UniqueDrivingSchoolManagementSystem/UniqueDrivingSchoolManagementSystem/Resources/truck1.jpg")
+                    PictureBox1.Image = My.Resources.truck1
                     Me.Instructor_CarTableAdapter.FillBy(Ist3bbDataSet1.Instructor_Car, tbCarID.Text)
                     If Ist3bbDataSet1.Instructor_Car.Rows.Count > 0 Then
                         tbText1.Text = Ist3bbDataSet1.Instructor_Car.Rows(0).Item(0)
