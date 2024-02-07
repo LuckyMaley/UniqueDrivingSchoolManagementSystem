@@ -23,6 +23,21 @@ The system has a friendly uncluttered, user interface and every link has a toolt
 # Guidelines
 ![Static Badge](https://img.shields.io/badge/Visual%20Studio-2010%20or%20later-green) ![Static Badge](https://img.shields.io/badge/.Net%20Framework-4-purple)
 
+# Project Structure
+
+- This project is seperated into 3 sub-systems:
+  - Unique Driving School Management System (Current project)
+  - Unique Driving School Reporting System ([click here to visit](./UniqueDrivingSchoolReportingSystem ))
+  - Unique Driving School Website ([click here to visit](./UniqueDrivingSchoolWebsite))
+
+# Config
+
+- Clone the project
+- To open the project solution just double click on [Hackathon2019.sln](/Hackathon2019.sln) 
+
+- (re)build application
+> (re)building the application will install the required ASP.NET packages from NuGet
+
 # Screenshots
 
 ![1  Introduction](https://github.com/LuckyMaley/UniqueDrivingSchoolManagementSystem/assets/58641501/71d04fa8-75c9-4acd-83ce-7517d1272675)
