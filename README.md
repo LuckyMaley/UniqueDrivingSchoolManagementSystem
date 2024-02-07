@@ -38,6 +38,10 @@ The system has a friendly uncluttered, user interface and every link has a toolt
 > (re)building the application will install the required ASP.NET packages from NuGet
 ![Screenshot (4084)](https://github.com/LuckyMaley/UniqueDrivingSchoolManagementSystem/assets/58641501/dad9c19e-f9be-41e7-8889-7d269d6604f3)
 
+- Database Setup
+> **NOTE:** If you want to change the connection string to a live or production-ready database just go to the [App.config](/../App.config) file and change the existing one to your database. Example of connection string below:
+
+ ```<add name="Database1ConnectionString" connectionString="Data Source= DatabaseServerName; Integrated Security=true;Initial Catalog= YourDatabaseName; uid=YourUserName; Password=yourpassword; " providerName="System.Data.SqlClient" />```  
 
 # Screenshots
 
