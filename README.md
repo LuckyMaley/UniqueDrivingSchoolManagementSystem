@@ -81,6 +81,6 @@ The system has a friendly uncluttered, user interface and every link has a toolt
 
 ![10  Cars](https://github.com/LuckyMaley/UniqueDrivingSchoolManagementSystem/assets/58641501/a820d555-e027-412c-9b30-8909767b4771)
 
-[click here](/../../../UniqueDrivingSchoolReportingSystem) to visit related project
+**[click here](/../../../UniqueDrivingSchoolReportingSystem) to visit related project**
 
 
