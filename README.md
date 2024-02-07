@@ -41,7 +41,23 @@ The system has a friendly uncluttered, user interface and every link has a toolt
 - Database Setup
 > **NOTE:** If you want to change the connection string to a live or production-ready database just go to the [App.config](/UniqueDrivingSchoolManagementSystem/App.config) file and change the existing one to your database. Example of connection string below:
 
- ```<add name="Database1ConnectionString" connectionString="Data Source= DatabaseServerName; Integrated Security=true;Initial Catalog= YourDatabaseName; uid=YourUserName; Password=yourpassword; " providerName="System.Data.SqlClient" />```  
+ ```<add name="UniqueDrivingSchoolManagementSystem.My.MySettings.ist3bbConnectionString" connectionString="Data Source= DatabaseServerName; Integrated Security=true;Initial Catalog=UniqueDrivingSchoolDB; uid=YourUserName; Password=yourpassword; " providerName="System.Data.SqlClient" />``` 
+ 
+ > **NOTE:** You need to also right-click the project name on the solution explorer > click properties > then go to settings, and when a pop-up message appears, click "yes" to confirm the changed connection string.
+
+- A sql query with the relevant database tables has already been created, you just need to initialize it. There are two SQL queries
+  - The first one creates a database. [Click here](/UniqueDrivingSchoolManagementSystem/SQLQueryCreateUniqueDrivingSchoolDB.sql) to go to the file called SQLQueryCreateUniqueDrivingSchoolDB.sql.
+  - The second uses the database you created in the previous point to initialize the database tables. [Click here](/UniqueDrivingSchoolManagementSystem/SQLQueryUniqueDrivingSchoolDB.sql) to go to the file called SQLQueryUniqueDrivingSchoolDB.sql.
+
+> **NOTE:** You need to make sure that the initial catalog in your connection string is the same as the database where these db tables are created or located.
+
+- You can now run and test the system.
+
+# Noticable improvements for future work
+
+- The Main Menu objects can be hidden if not logged in and only appear when a user has logged in.
+- Cars can be added without having an instructor assigned to them for stock-keeping.
+- The system can be updated to use an API for database interactivity so users created on this system can also be accessible on the website.
 
 # Screenshots
 
