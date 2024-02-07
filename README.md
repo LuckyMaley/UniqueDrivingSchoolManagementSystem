@@ -25,15 +25,16 @@ The system has a friendly uncluttered, user interface and every link has a toolt
 
 # Project Structure
 
-- This project is seperated into 3 sub-systems:
-  - Unique Driving School Management System (Current project)
+- This project is separated into 3 sub-systems:
+  - Unique Driving School Management System ([Current project](/))
   - Unique Driving School Reporting System ([click here to visit](/../../../UniqueDrivingSchoolReportingSystem ))
   - Unique Driving School Website ([click here to visit](/../../../UniqueDrivingSchoolWebsite))
+- A User Story System was built for the aforementioned subsystems to keep track of the progress of the user stories and test cases during development  ([click here to visit](/../../../UserStoryApp)).
 
 # Config
 
 - Clone the project
-- To open the project solution just double click on [Hackathon2019.sln](/Hackathon2019.sln) 
+- To open the project solution just double click on [UniqueDrivingSchoolManagementSystem.sln](/UniqueDrivingSchoolManagementSystem.sln) 
 
 - (re)build application
 > (re)building the application will install the required ASP.NET packages from NuGet
