@@ -2,19 +2,17 @@
 
 This is the Front-End System used by Admins and Managers to book and manage bookings of driving lesson. The system is built on the vb.net programming language
 
-
 Transaction Processing requirements	
+
 The main purpose of the system is to successfully capture a customer and create   a time table afterwards, this feature was successfully implemented also accounting for other basic functionalities such as creation or registration of instructors, customers and other admin stuff. Deletion and updating of user details was implemented as well.
 
-
-
 Usability	
+
 The interface was made in such a way that the most important tasks that the user may want to perform are easy to access, understand, and use.  A help sub-system was successfully integrated.
 
-
 Minimisation of errors	
-Error handling and validation was heavily implemented to make sure that errors are easily identified. This includes the use of try catch statements, string formatting and setting textboxes to allow numbers for the relevant textbox.
 
+Error handling and validation was heavily implemented to make sure that errors are easily identified. This includes the use of try catch statements, string formatting and setting textboxes to allow numbers for the relevant textbox.
 
 Learning the system
 	
@@ -27,7 +25,7 @@ The system has a friendly uncluttered, user interface and every link has a toolt
 
 - This project is separated into 3 sub-systems:
   - Unique Driving School Management System ([Current project](/))
-  - Unique Driving School Reporting System ([click here to visit](/../../../UniqueDrivingSchoolReportingSystem ))
+  - Unique Driving School Reporting System ([click here to visit](/../../../UniqueDrivingSchoolReportingSystem))
   - Unique Driving School Website ([click here to visit](/../../../UniqueDrivingSchoolWebsite))
 - A User Story System was built for the aforementioned subsystems to keep track of the progress of the user stories and test cases during development  ([click here to visit](/../../../UserStoryApp)).
 
@@ -38,6 +36,8 @@ The system has a friendly uncluttered, user interface and every link has a toolt
 
 - (re)build application
 > (re)building the application will install the required ASP.NET packages from NuGet
+![Screenshot (4084)](https://github.com/LuckyMaley/UniqueDrivingSchoolManagementSystem/assets/58641501/dad9c19e-f9be-41e7-8889-7d269d6604f3)
+
 
 # Screenshots
 
@@ -61,6 +61,6 @@ The system has a friendly uncluttered, user interface and every link has a toolt
 
 ![10  Cars](https://github.com/LuckyMaley/UniqueDrivingSchoolManagementSystem/assets/58641501/a820d555-e027-412c-9b30-8909767b4771)
 
-
+[click here to visit related project](/../../../UniqueDrivingSchoolReportingSystem)
 
 
