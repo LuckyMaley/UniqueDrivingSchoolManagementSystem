@@ -27,8 +27,8 @@ The system has a friendly uncluttered, user interface and every link has a toolt
 
 - This project is seperated into 3 sub-systems:
   - Unique Driving School Management System (Current project)
-  - Unique Driving School Reporting System ([click here to visit](/../../../../UniqueDrivingSchoolReportingSystem ))
-  - Unique Driving School Website ([click here to visit](/../../../../UniqueDrivingSchoolWebsite))
+  - Unique Driving School Reporting System ([click here to visit](/../../../UniqueDrivingSchoolReportingSystem ))
+  - Unique Driving School Website ([click here to visit](/../../../UniqueDrivingSchoolWebsite))
 
 # Config
 
